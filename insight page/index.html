@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight page</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+
+        <!--start logo section -->
+        <div class="logo-section">
+            <div class="logo-div">
+                <img src="./images/logo.png" alt="this is not avaialble for this device">
+            </div>
+            <div class="logo-section-2nd-div">
+                <a href="#"><img src="./images/setting.png" class="img-1"
+                        alt="this is not avaialble for this device"></a>
+                <a href="#"><img src="./images/notification.png" class="img-2"
+                        alt="this is not avaialble for this device"></a>
+                <a href="#"><img src="./images/dp.jpg" class="img-3" alt="this is not avaialble for this device"></a>
+            </div>
+        </div>
+        <!--End logo section -->
+        <!----- Start navbar section ---->
+        <div class="section-navbar-main">
+            <div class="section-navbar">
+                <div class="navbar-menu">
+                    <ul>
+                        <li><a href="../dashboard page/index.html"><img src="./images/home.png"
+                                    alt="your internet is off">Home</a></li>
+                        <li><a href="../Edit page/index.html"><img src="./images/card.png" alt="your internet is off">My
+                                Cards</a></li>
+                        <li><a href="../contact/index.html"><img src="./images/user.png"
+                                    alt="your internet is off">Contacts</a></li>
+                        <li><a href="../big accessories/index.html"><img src="./images/bubble.png"
+                                    alt="your internet is off">Accessories</a></li>
+                        <li><a href="../insight page/index.html"><img src="./images/insight.png"
+                                    alt="your internet is off"><span>Insight</span></a></li>
+                        <li><a href="../integrations page/index.html"><img src="./images/firstline.png"
+                                    alt="your internet is off">Integrations</a>
+                        </li>
+                        <li><a href="../setting page/index.html"><img src="./images/setting.png"
+                                    alt="your internet is off">Setting</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!----- End navbar section ---->
+        <div class="insight-content-main">
+            <div class="insight-content-1">
+                <h1>Insight</h1>
+            </div>
+            <div class="insight-content-2">
+                <img src="./images/calender.png" alt="Your internet is off">
+                <h2>Last 30 days</h2>
+                <p> Dec 6, 2023 - Jan 4, 2024</p>
+            </div>
+        </div>
+        <div class="small-divs-main">
+            <!-- 1st small div  -->
+            <div class="small-div">
+                <div class="img-div-1">
+                    <a href="#"><img src="./images/trader.png" alt="Your internet is off"></a>
+                </div>
+                <div class="small-div-text">
+                    <p>Leads Generated</p>
+                    <h2>12 <img src="./images/stop-tool.png" alt="Your internet is off"> <span>100%</span></h2>
+                </div>
+            </div>
+            <!-- 2nd small div  -->
+            <div class="small-div">
+                <div class="img-div-1 img-div-2">
+                    <a href="#"><img src="./images/finger tap.png" alt="Your internet is off"></a>
+                </div>
+                <div class="small-div-text">
+                    <p>Links taps</p>
+                    <h2>56 <img src="./images/stop-tool.png" alt="Your internet is off"> <span>100%</span></h2>
+                </div>
+            </div>
+            <!-- 3rd small div  -->
+            <div class="small-div">
+                <div class="img-div-1 img-div-3">
+                    <a href="#"><img src="./images/eye.png" alt="Your internet is off"></a>
+                </div>
+                <div class="small-div-text">
+                    <p>Cards Views</p>
+                    <h2>31 <img src="./images/stop-tool.png" alt="Your internet is off"> <span>100%</span></h2>
+                </div>
+            </div>
+            <!-- 4th small div  -->
+            <div class="small-div  small-div-4">
+                <div class="img-div-1 img-div-4">
+                    <a href="#"><img src="./images/cloud.png" alt="Your internet is off"></a>
+                </div>
+                <div class="small-div-text">
+                    <p>Contacts Downloaded</p>
+                    <h2>79 <img src="./images/stop-tool.png" alt="Your internet is off"> <span>100%</span></h2>
+                </div>
+            </div>
+            <!-- 4th small div  -->
+        </div>
+        <div class="chats-activity-full-main">
+            <div class="chats-links-main">
+                <div class="chats-div">
+                    <div class="chat">
+                        <h2>Views Over Time</h2>
+                        <!-- chats  -->
+                        <div class="chats-code">
+                            <!-- put chat code  -->
+                            
+                                <canvas
+                                  id="linechart"
+                                  style="
+                                    min-width:450px;
+                                    max-height: 300px;
+                                    display: block;
+                                    box-sizing: border-box;
+                                  "
+                                ></canvas>
+                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                        </div>
+                    </div>
+                    <div class="chat">
+                        <h2>Leads Generated</h2>
+                        <!-- chats  -->
+                        <div class="chats-code">
+                                <canvas
+                                  id="myChart"
+                                  style="
+                                    min-width: 450px;
+                                    max-height: 300px;
+                                    display: block;
+                                    box-sizing: border-box;
+                                  "
+                                ></canvas>
+                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                            <!-- put chat code  -->
+                        </div>
+                    </div>
+                    <!-- chats end   -->
+                </div>
+                <!-- links div start  -->
+                <div class="links-div">
+                    <h2>Top Tapped Links </h2>
+                    <div class="link-small-divs">
+                        <div class="link-part-1">
+                            <div class="link">
+                                <div class="img-text-plus">
+                                    <a href="#"><img src="./images/email.png" alt="Your internet is off"></a>
+                                    <p>Email</p>
+                                </div>
+                                <div class="num-div">
+                                    <h3>12</h3>
+                                </div>
+                            </div>
+                          <!-- 2nd link  -->
+                            <div class="link link-2">
+                                <div class="img-text-plus">
+                                    <a href="#"><img src="./images/linkedIn.png" alt="Your internet is off"></a>
+                                    <p>LinkedIn</p>
+                                </div>
+                                <div class="num-div">
+                                    <h3>9</h3>
+                                </div>
+                            </div>
+                            <!-- 3rd link  -->
+                            <div class="link">
+                                <div class="img-text-plus">
+                                    <a href="#"><img src="./images/call.png" alt="Your internet is off"></a>
+                                    <p>Call</p>
+                                </div>
+                                <div class="num-div">
+                                    <h3>11</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- part 2  -->
+                        <div class="link-part-2">
+                            <!-- link 1  -->
+                            <div class="link">
+                                <div class="img-text-plus">
+                                    <a href="#"><img src="./images/massage.png" alt="Your internet is off"></a>
+                                    <p>Phone</p>
+                                </div>
+                                <div class="num-div">
+                                    <h3>12</h3>
+                                </div>
+                            </div>
+                            <!-- link 2  -->
+                            <div class="link link-2">
+                                <div class="img-text-plus">
+                                    <a href="#"><img src="./images/instgram.png" alt="Your internet is off"></a>
+                                    <p>Instagram</p>
+                                </div>
+                                <div class="num-div">
+                                    <h3>9</h3>
+                                </div>
+                            </div>
+                            <!-- link-3  -->
+                            <div class="link">
+                                <div class="img-text-plus">
+                                    <a href="#"><img src="./images/snapchat.png" alt="Your internet is off"></a>
+                                    <p>Snapchat</p>
+                                </div>
+                                <div class="num-div">
+                                    <h3>11</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- activity divs start  -->
+            <div class="activity-main-div">
+            <h2>Recent Activity</h2>
+            <div class="activity">
+                <div class="div-row">
+                    <img src="./images/PFP.png" alt="Your internet is off">
+                    <h2>John Doe</h2>
+                    <p>Connected with Julie Doe</p>
+                </div>
+                <!-- row copys -->
+                <div class="div-row">
+                    <img src="./images/PFP.png" alt="Your internet is off">
+                    <h2>John Doe</h2>
+                    <p>Card was tapped</p>
+                </div>
+                <!-- row copys -->
+                <div class="div-row">
+                    <img src="./images/PFP.png" alt="Your internet is off">
+                    <h2>John Doe</h2>
+                    <p>WhatsApp was tapped</p>
+                </div>
+                <!-- row copys -->
+                <div class="div-row">
+                    <img src="./images/PFP.png" alt="Your internet is off">
+                    <h2>John Doe</h2>
+                    <p>Card was tapped</p>
+                </div>
+                <!-- row copys -->
+                <div class="div-row">
+                    <img src="./images/PFP.png" alt="Your internet is off">
+                    <h2>John Doe</h2>
+                    <p>WhatsApp was tapped</p>
+                </div>
+                <!-- row copys -->
+                <div class="div-row">
+                    <img src="./images/PFP.png" alt="Your internet is off">
+                    <h2>John Doe</h2>
+                    <p>Card was tapped</p>
+                </div>
+                <!-- row copys -->
+                <div class="div-row">
+                    <img src="./images/PFP.png" alt="Your internet is off">
+                    <h2>John Doe</h2>
+                    <p>WhatsApp was tapped</p>
+                </div>
+                <!-- row copys -->
+                <div class="div-row hidden">
+                    <img src="./images/PFP.png" alt="Your internet is off">
+                    <h2>John Doe</h2>
+                    <p>Card was tapped</p>
+                </div>
+                <!-- row copys -->
+                <div class="div-row hidden">
+                    <img src="./images/PFP.png" alt="Your internet is off">
+                    <h2>John Doe</h2>
+                    <p>Card was tapped</p>
+                </div>
+                <!-- row copys -->
+            </div>
+        </div>
+    </div>
+
+        <div class="type-accessories-main">
+            <div class="traffic-active-main">
+                <div class="traffic-type">
+                    <h1>Traffic Type</h1>
+                    <div class="traffic-chat-white-div">
+                        <!-- input bottom chat code 1st  -->
+                        <div class="half-div">
+                            <div class="circle-main">
+                            <div class="circle-small-div-2  traffic-circle"></div>
+                            <p>Direct On <span>50%</span></p>
+                        </div>
+
+                        <div class="circle-main">
+                            <div class="circle-small-div-2  traffic-circle-2"></div>
+                            <p>Direct Off <span>18%</span></p>
+                        </div>
+
+                        <div class="circle-main">
+                            <div class="circle-small-div-2  traffic-circle-3"></div>
+                            <p>Share <span>100%</span></p>
+                        </div>
+                        </div>
+                    <div id="container"></div>
+
+                    </div>
+                </div>
+                <div class="most-accessories">
+                    <h1>Most Active Accessories</h1>
+                    <div class="most-active-bg-white">
+                        <!-- band  -->
+                        <div class="band-etc-div">
+                            <div class="band-text">
+                                <h3>Band</h3>
+                            </div>
+                            <div class="band-line">
+                                <p>---------------</p>
+                            </div>
+                            <div class="band-num">
+                                <p>1</p>
+                            </div>
+                        </div>
+                        <!-- card  -->
+                        <div class="band-etc-div band-2">
+                            <div class="band-text">
+                                <h3>Card</h3>
+                            </div>
+                            <div class="band-line">
+                                <p>---------------</p>
+                            </div>
+                            <div class="band-num">
+                                <p>2</p>
+                            </div>
+                        </div>
+                        <!-- Keychain  -->
+                        <div class="band-etc-div">
+                            <div class="band-text">
+                                <h3>Keychain</h3>
+                            </div>
+                            <div class="band-line">
+                                <p>---------------</p>
+                            </div>
+                            <div class="band-num">
+                                <p>3</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="view-type">
+                <h1>View Type</h1>
+                <div class="view-type-chat-white-div">
+                    <!-- input bottom chat code 3rd  -->
+                        <div class="half-div">
+                            <div class="circle-main">
+                            <div class="circle-small-div"></div>
+                            <p>Direct On <span>50%</span></p>
+                        </div>
+
+                        <div class="circle-main">
+                            <div class="circle-small-div circle-2"></div>
+                            <p>Direct Off <span>18%</span></p>
+                        </div>
+
+                        <div class="circle-main">
+                            <div class="circle-small-div circle-3"></div>
+                            <p>Share <span>100%</span></p>
+                        </div>
+                        </div>
+                    <div id="containerChart"></div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <script>
+
+        // <!-- 1st lineChart --->
+
+        const labels = ["January", "February", "March", "April", "May", "June"];
+        const data = {
+          labels: labels,
+          datasets: [
+            {
+              label: "My First dataset",
+              backgroundColor: "#fff",
+              borderColor: "rgba(252, 170, 11, 1)",
+              data: [0, 10, 5, 2, 20, 30, 45],
+            },
+          ],
+        };
+
+        const config = {
+          type: "line",
+          data,
+          options: {},
+        };
+        const data2 = {
+          labels: labels,
+          datasets: [
+            {
+              label: "My First dataset",
+              backgroundColor: "#fff",
+              borderColor: "rgba(22, 219, 204, 1)",
+              data: [0, 10, 45, 32, 90, 30, 45],
+            },
+          ],
+        };
+        var linechart = new Chart(document.getElementById("linechart"), config);
+        var linechart = new Chart(document.getElementById("myChart"), config);
+
+        // <!-- 1st Chart --->
+
+        Highcharts.chart("containerChart", {
+          chart: {
+            type: "variablepie",
+          },
+          plotOptions: {
+            variablepie: {
+              dataLabels: {
+                enabled: false,
+              },
+            },
+          },
+          title: {
+            text: "",
+          },
+          tooltip: {
+            headerFormat: "",
+            pointFormat:
+              '<span style="color:{point.color}">\u25CF</span> <b> {point.name}</b><br/>' +
+              "Direct On <b>{point.y}</b><br/>",
+            // "Population density (people per square km): <b>{point.z}</b><br/>",
+          },
+          series: [
+            {
+              minPointSize: 10,
+              innerSize: "30%",
+              zMin: 0,
+              name: "countries",
+              borderRadius: 5,
+              data: [
+                {
+                //   name: "Share",
+                  y: 505992,
+                  z: 92,
+                },
+                {
+                //   name: "France",
+                  y: 551695,
+                  z: 30,
+                },
+                {
+                //   name: "Italy",
+                  y: 301336,
+                  z: 50,
+                },
+                {
+                //   name: "Germany",
+                  y: 357114,
+                  z: 70,
+                },
+              ],
+              colors: [
+                "rgba(250, 0, 255, 1)",
+                "rgba(177, 177, 177, 1)",
+                "rgba(0, 17, 113, 1)",
+                "rgba(63, 59, 255, 1)",
+              ],
+            },
+          ],
+        });
+
+
+        // <!-- 2nd Chart --->
+        Highcharts.chart("container", {
+          chart: {
+            type: "variablepie",
+          },
+          plotOptions: {
+            variablepie: {
+              dataLabels: {
+                enabled: false,
+              },
+            },
+          },
+          title: {
+            text: "",
+          },
+          tooltip: {
+            headerFormat: "",
+            pointFormat:
+              '<span style="color:{point.color}">\u25CF</span> <b> {point.name}</b><br/>' +
+              "Direct On <b>{point.y}</b><br/>",
+            // "Population density (people per square km): <b>{point.z}</b><br/>",
+          },
+          series: [
+            {
+              minPointSize: 10,
+              innerSize: "30%",
+              zMin: 0,
+              name: "countries",
+              borderRadius: 5,
+              data: [
+                {
+                //   name: "Share",
+                  y: 505992,
+                  z: 92,
+                },
+                {
+                //   name: "France",
+                  y: 551695,
+                  z: 30,
+                },
+                {
+                //   name: "Italy",
+                  y: 301336,
+                  z: 50,
+                },
+                {
+                //   name: "Germany",
+                  y: 357114,
+                  z: 70,
+                },
+              ],
+              colors: [
+                "#16DBCC",
+                "#B1B1B1",
+                "#EFA4F5",
+                "#4C78FF",
+              ],
+            },
+          ],
+        });
+
+    </script>
+</body>
+
+</html>

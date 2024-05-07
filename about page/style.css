@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/bg-screenshot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.back-div-main{
+    width: 100%;
+    height: 100vh;
+    background-color:#00000009;
+    display: grid;
+    place-items: center;
+}
+.short-main-div{
+    border-radius: 2rem;
+    background-color: white;
+    width: 50%;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.one-div{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top: 40px;    
+    margin-bottom: 0.5rem;
+}
+.content{
+    width: 58%;
+    h1{
+        font-size: 1.8rem;
+        font-family: "Inter", sans-serif;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+    p{
+        font-size: 0.92rem;
+        font-family: "Inter", sans-serif;
+        width: 92%;
+        color: #545454;        
+    }
+}
+.scan-pic{
+    width: 21%;
+    display: grid;
+    place-items: center;
+}
+.close{
+    width: 3%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.copy-card-div{
+    margin: 1rem 0;
+    border-top: 1.5px solid #cbcbcb;
+    border-bottom: 1.5px solid #cbcbcb;
+    width: 90%;
+    padding: 2rem 0;
+    
+}
+.text{
+    font-family: "Inter", sans-serif;
+    margin-bottom: 1rem;
+    h1{
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+}
+.copy-card-div-link{
+    display: flex;
+    
+    p{
+        background-color: #f0f0f0;
+        width: 80%;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        font-family: "Inter", sans-serif;
+    }
+}
+.links{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    
+    a{
+        text-decoration: none;
+        color: blue;
+    }
+}
+.third-div{
+    width: 90%;
+}
+.text-2{
+ font-family: "Inter", sans-serif;
+ margin-bottom: 1rem;
+ h1{
+     font-size: 1.5rem;
+     font-weight: 500;
+ }   
+}
+.card-links-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.one-card-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48.5%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-family: "Inter", sans-serif;
+}
+.social-link-1{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    gap:10px;
+    img{
+        width: 1.5rem;
+    }
+}
+
+/* media quary */
+@media only screen and (max-width:768px){
+
+.short-main-div{
+        width: 90%;
+        padding: 1rem 1rem;
+    }
+.content{
+    width: 70%;
+}
+
+.one-div{
+    width: 100%;
+    margin-top: 3rem;    
+    margin-bottom: 0.5rem;
+}
+
+}

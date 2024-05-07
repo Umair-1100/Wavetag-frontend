@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f077;
+}
+
+/****** logo section ******/
+.logo-section {
+    padding: 0.8rem 2.3rem 0.3rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-div {
+    img {
+        width: 9rem;
+    }
+}
+
+.logo-section-2nd-div {
+    width: 10%;
+    gap: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img-1 {
+        width: 1.3rem;
+        height: 1.4rem;
+        filter: drop-shadow(0px, 4px, 4px, 0px, #000);
+    }
+
+    .img-2 {
+        width: 1.3rem;
+        height: 1.4rem;
+    }
+
+    .img-3 {
+        width: 3rem;
+        height: auto;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+
+/****** logo section ******/
+
+/****Start navbar section ****/
+.section-navbar-main {
+    padding: 0.8rem 1.5rem 0.8rem 0.4rem;
+    display: grid;
+    place-items: center;
+}
+.section-navbar {
+    background-color: white;
+    width: 98%;
+    padding: 1.3rem 0 1.3rem 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.navbar-menu {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;    
+    ul {
+        gap: 5rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    ul li a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #718EBF;
+        gap: 10px;
+        font-family: "Inter", sans-serif;
+    }
+    span{
+        color: blue;
+       position: relative;
+    }
+}
+.navbar-menu span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -15px;
+    width: 120%;
+    background-color: blue;
+    border: 2px solid blue;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+}
+/* end navbar section */
+.full-div{
+    /* border: 2px solid teal; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+.colom-1{
+    /* border: 2px solid green; */
+    margin-top: 3rem;
+    width: 29%;
+    padding: 0 1rem;
+}
+.part-1{
+    /* border: 2px solid red; */
+    margin-bottom: 2rem;
+    h1{
+        font-size: 3rem;
+        color: #333333;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+    p{
+      color:#333333 ;  
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+    }
+}
+.part-2{
+    /* border: 2px solid indigo; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.colom-2{
+    /* border: 2px solid aqua; */
+    margin-top: 3rem;
+    padding: 0 1rem;
+    width: 60%;
+}
+.first-div{
+    /* border: 2px solid deeppink; */
+    width: 100%;
+    height: 60%;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.vector{
+    position: absolute;
+    top: 3rem;
+    left: 12rem;
+}
+.zapier{
+    position: absolute;
+    top: 11rem;
+    left: 9rem;
+}
+.chatgpt{
+    position: absolute;
+    top: 6rem;
+    left: 24rem;
+}
+.google-video{
+    position: absolute;
+    bottom:5rem;
+    left: 27rem;
+}
+.group{
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+}
+.telegram{
+    position: absolute;
+    top: 8rem;
+    right: 9rem;
+}
+.purple{
+    position: absolute;
+    bottom: 0;
+    right: 8rem;
+}
+.monkey{
+    position: absolute;
+    bottom:5rem;
+    right: 2rem;
+}
+
+.second-div{
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.smart-div{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem ;
+    gap: 10px;
+    border-radius: 10px;
+}
+.img-div{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-content{
+    /* border: 2px solid black; */
+    h3{
+        color: #27AE60;
+        font-family: "Inter", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 0.2rem;
+    }
+    p{
+        color: #828282 ;
+        font-family: "Inter", sans-serif;
+        font-size: 0.7rem;
+
+    }
+
+}
+
+/* media quary */
+/*** navbar quary  1549px ****/
+@media only screen and (max-width:1540px){
+ 
+    .navbar-menu {
+        width: 85%;
+        font-size: 12px;
+     
+        ul li a img{
+            width: 20px;
+            height: auto;
+        }
+    }
+    .download-div {
+        font-size: 12px;
+        img {
+            width: 20px;
+            height: auto;
+        }
+    }
+  }
+  /*** navbar quary  1549px ****/
+  
+  /*** navbar quary  1290px ****/
+  @media only screen and (max-width:1290px){
+    
+    .navbar-menu {
+        width: 85%;
+        font-size: 10px;
+        ul {
+            gap: 4rem;
+        }
+        ul li a img{
+            width: 15px;
+            height: auto;
+        }
+    }
+    .download-div {
+        font-size: 12px;
+        img {
+            width: 20px;
+            height: auto;
+        }
+    }
+  }
+  /*** navbar quary  1290px ****/
+  
+  @media only screen and (max-width:1090px){
+    
+    .navbar-menu {
+        font-size: 10px;
+        ul {
+            gap: 2rem;
+        }
+    }
+    .download-div {
+        font-size: 10px;
+        img {
+            width: 15px;
+            height: auto;
+        }
+    }
+   /**** navbar quary ***/
+  }
+
+  @media only screen and (max-width:768px){
+
+    /****** logo section ******/
+    .logo-section {
+        padding: 0.8rem 2rem 0.3rem 1rem;
+        width: 96%;
+    }
+    .logo-div {
+        img {
+            width: 8rem;
+        }
+    }
+    .logo-section-2nd-div {
+        gap: 20px;
+    
+        .img-1 {
+            width: 1.2rem;
+            height: 1.2rem;
+            filter: drop-shadow(0px, 4px, 4px, 0px, #000);
+        }
+    
+        .img-2 {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    
+        .img-3 {
+            width: 2.5rem;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+    /****** logo section ******/
+    
+    /**** navbar section ****/
+    .section-navbar {
+        width: 95%;
+    }
+    .navbar-menu {
+        width: 92%;
+        font-size: 10px;
+        
+        ul{
+            gap: 1.7rem;
+        }
+        ul li a img{
+            width: 10px;
+            height: auto;
+        }
+    }
+    .download-div {
+        width: 14%;
+        gap: 5px;
+        font-size: 8px;
+        img {
+            width: 10px;
+            height: auto;
+        }
+    }
+  .navbar-menu span::before{
+    content: '';
+    position: absolute;
+    top: 29px;
+    left: -10px;
+    width: 120%;
+    background-color: blue;
+    border: 2px solid blue;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  
+  }
+  /*** End navbar section ***/
+
+  .colom-1{
+    /* border: 2px solid green; */
+    margin-top: 3rem;
+    width: 60%;
+    padding: 0 0.5rem;
+}
+
+.part-1{
+    margin-bottom: 3rem;
+    h1{
+        font-size: 2rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+}
+.colom-2{
+    /* border: 2px solid red; */
+    margin-top: 3rem;
+    padding: 0 0.5rem;
+    width: 40%;
+}
+
+.vector{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.zapier{
+    position: absolute;
+    top: 7rem;
+    left: 0;
+}
+.chatgpt{
+    position: absolute;
+    top: 6rem;
+    left: 24rem;
+}
+.google-video{
+    position: absolute;
+    bottom:5rem;
+    left: 27rem;
+}
+.group{
+    position: absolute;
+    top: 2rem;
+    right: 0;
+}
+.telegram{
+    position: absolute;
+    top: 10rem;
+    right: 1rem;
+}
+.purple{
+    position: absolute;
+    bottom: 3rem;
+    right: 10rem;
+}
+.monkey{
+    position: absolute;
+    bottom:1rem;
+    right: 2rem;
+}
+.smart-div{   
+    padding: 0 0.5rem ;
+    gap: 10px;
+}
+
+.text-content{
+    h3{
+        font-size: 0.8rem;
+    }
+    p{
+        font-size: 0.5rem;
+    }
+}
+}

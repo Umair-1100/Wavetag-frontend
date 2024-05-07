@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/background\ screenshot.png);
+}
+.main{
+     width: 100%;
+     height: 100vh;
+     background-color:rgba(0, 0, 0, 0.26) ;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.white-div{
+    width: 50%;
+    height: 80%;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+}
+.div-1{
+    border-right: 2px solid #cbcbcb;
+    padding: 1rem 2rem;
+    width: 60%;
+}
+.div-2{
+    width: 40%;
+}
+.content-div{    
+    margin-bottom: 1rem;
+    h1{
+        font-family: "Inter", sans-serif;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    p{
+        font-family: "Inter", sans-serif;
+        color: #545454;
+        font-size: 1rem;
+    }
+}
+.card-main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.card{
+    border: 2px solid #3389f4;
+    width: 25%;
+    padding: 1rem 1rem;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h2{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    p{
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+    h3{
+        margin-bottom: 0.5rem;
+    }
+    input{
+        accent-color: blue;
+        border-radius: 50%;
+    }
+}
+.checkbox-main{
+    display: flex;
+    justify-content: left;
+   
+}
+.checkbox-part-1{
+    p{
+        font-family: "Inter", sans-serif;
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+input{
+    accent-color: blue;
+}
+}
+.checkbox-part-2{
+    margin-left: 5rem;
+    p{
+        font-family: "Inter", sans-serif;
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    input{
+        accent-color: blue;
+    }
+}
+.text{
+    margin-bottom: 0.5rem;
+   h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #2d2d2d;
+    }
+}
+.link-div{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    margin-bottom: 1rem;
+    p{
+        color: #343434;
+    }
+}
+.btn-main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.btn-1{
+    border: 1px solid;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    a{
+        text-decoration: none;
+        color: black;
+        font-family: "Inter", sans-serif;
+    }
+}
+.btn-1:hover{
+    background-color: black;
+    a{
+        color: white;
+    }
+}
+.btn-2{
+    border: 2px solid blue;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    background-color: blue;
+    transition: all 0.4s ease-in-out;
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+    }
+}
+.btn-2:hover{
+    background-color: white;
+    a{
+        color: blue;
+    }
+}
+.btn-3{
+    border: 2px solid blue;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    background-color: blue;
+    transition: all 0.4s ease-in-out;
+
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+
+    }
+}
+.btn-3:hover{
+    background-color: white;
+    a{
+        color: blue;
+    }
+}
+.close-div{
+    display: flex;
+    width: 100%;
+    padding: 0 1.5rem;
+    margin-top: 2.5rem;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 1rem;
+}
+.dp-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.dp{
+    display: flex;justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.font-div{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        margin-bottom: 0.5rem;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 1.4rem;
+    }
+    p{
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+    }
+    h3{
+        font-weight: 400;
+        font-family: "Inter", sans-serif;
+        font-size: 1.1rem;
+    }
+}
+.scan-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.scan-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+        font-size: 1.3rem;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+ 
+.main{
+    width: 100%;
+    height: 105vh;
+}   
+.white-div{
+    width: 95%;
+    height: 90%;
+}
+
+.card{
+    border: 2px solid #3389f4;
+    width: 30%;
+    padding: 1rem 0.5rem;
+}
+}

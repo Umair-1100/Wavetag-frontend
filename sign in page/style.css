@@ -1,0 +1,363 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F5F7FA;
+
+}
+.main-class {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup {
+    width: 60rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.left-side {
+    width: 55%;
+    height: 100%;
+    background-color: #1814F3;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.wave-img {
+    background-color: #2D60FF;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6rem;
+    position: absolute;
+    top: 5rem;
+    left: -1rem;
+
+    img {
+        width: 3rem;
+    }
+}
+
+.people-img {
+    width: 20rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+.left-side-content {
+    text-align: center;
+    color: white;
+    font-family: "Inter", sans-serif;
+    margin: 0.8rem 0;
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+.mobile-div {
+    position: absolute;
+    left: 21rem;
+    bottom: -3.5rem;
+
+    img {
+        width: 4.5rem;
+    }
+}
+
+.right-side {
+    width: 45%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(238.72deg,
+            rgba(195, 195, 195, 0.2),
+            rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(5px);
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+
+}
+
+.form-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+
+}
+
+.signup-picture {
+    font-family: "Inter", sans-serif;
+    color: #1814F3;
+    text-align: center;
+    width: 6rem;
+    margin-bottom: 0.5rem;
+
+    img {
+        width: 3rem;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+.icon-input-div-1 {
+    font-size: 1.5rem;
+    position: relative;
+
+
+    input {
+        padding: 0.5rem 2rem;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        font-family: "Inter", sans-serif;
+        margin-bottom: 15px;
+        width: 100%;
+        background: none;
+        border: 1px solid gray;
+        border-radius: 5px;
+
+    }
+
+    .fa-envelope {
+        position: absolute;
+        top: 0.4rem;
+        left: 2px;
+        color: gray;
+    }
+
+    .lock {
+        position: absolute;
+        bottom: 1.3rem;
+        left: 2px;
+        color: gray;
+    }
+
+    .eye {
+        position: absolute;
+        right: 0.2rem;
+        bottom: 1.3rem;
+        color: gray;
+    }
+}
+
+input::placeholder {
+    position: absolute;
+    left: 2rem;
+}
+
+.forgot-password {
+    color: #1814F3;
+    text-decoration: none;
+    font-size: 1rem;
+    width: 100%;
+    text-align: right;
+
+}
+
+.login-btn {
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    width: 100%;
+    background-color: #1814F3;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+.btn-links {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.or-div {
+    position: relative;
+    color: gray;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.or-div::after {
+    content: '';
+    width: 100px;
+    border-top: 0.5px solid gray;
+    position: absolute;
+    top: 9px;
+    right: 21px;
+
+}
+
+.or-div::before {
+    content: '';
+    width: 100px;
+    border-top: 0.5px solid gray;
+    position: absolute;
+    top: 9px;
+    left: 21px;
+}
+
+.btn-main-div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-google {
+    border: 2px solid blue;
+    padding: 0.3rem 3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+
+    a {
+        text-decoration: none;
+        color: #1814F3;
+    }
+
+    img {
+        bottom: 4px;
+        left: 10px;
+        position: absolute;
+    }
+}
+
+.btn-facbook {
+    border: 2px solid blue;
+    padding: 0.3rem 2.5rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    a {
+        text-decoration: none;
+        color: #1814F3;
+    }
+
+    img {
+        position: absolute;
+        left: 10px;
+        bottom: 1.5px;
+    }
+}
+
+.have-no-account-yet-div {
+    color: gray;
+    margin-bottom: 0.5rem;
+}
+
+.registration-btn {
+    border: 2px solid blue;
+    /* width: 100%; */
+    padding: 0.5em;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 2rem;
+    a {
+        text-decoration: none;
+        padding: 0.5rem 7rem;
+        color: #1814F3;
+    }
+}
+
+.isolation-pic-div {
+    position: absolute;
+    bottom: 0.3rem;
+    right: 17rem;
+    z-index: -1;
+    img{
+        width: 13rem;
+    }
+}
+
+@media only screen and (max-width: 1450px){
+    .isolation-pic-div{
+        display: none;
+    }
+  
+} 
+
+@media only screen and (max-width:768px) {
+    body{
+        padding:13rem 3rem;
+    }
+    .signup{
+        display: block;
+        border-radius:3%;
+        /* border: 2px solid red; */
+        overflow: hidden;
+        width: 100%;
+    }
+    .isolation-pic-div{
+        display: none;
+    }
+    .left-side{
+        width: 100%;
+        border-radius: 0;
+    }
+    .right-side{
+        width: 100%;
+        border-radius:0%;
+        padding: 2rem 0;
+        
+    }
+
+.mobile-div {
+    position: absolute;
+    display: block;
+    top:23rem;
+    left:30rem;
+
+    img {
+        width: 4.5rem;
+    }
+}
+form {
+    width: 50%;
+
+}
+}
